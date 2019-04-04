@@ -53,7 +53,8 @@
             <!-- Основной контент страницы  -->
             <div class="row">
                 <div class="col-md-4 left">
-                    <div class="city">Київ</div>
+                    <div class="weather">
+                    <div class="city">Київ<img src="assets/images/home-nopick.png" width="30" height="30"></div>
                     <div class="temperature">28&deg;C</div>
                     <div class="pressure">Тиск: 755 мм рт. ст.</div>
                     <div class="humidity">Вологість: 48%</div>
@@ -61,18 +62,25 @@
                     <div class="wind">Вітер: 3 м/с - північно-східний</div>
                     <div class="sunrise">Схід: 6:30</div>
                     <div class="sunset">Захід: 19:30</div>
+                    </div>
                   </div>
                 <div class="col-md-8 right">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div id="demo" class="carousel slide container" data-ride="carousel">
                         <ul class="carousel-indicators">
                             <li data-target="#demo" data-slide-to="0" class="active"></li>
                             <li data-target="#demo" data-slide-to="1"></li>
                         </ul>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Що вдягнути?<img alt="woman" src="assets/images/woman.png" width="50" height="50"></h4>
+                                </div>
                                 <img class="img-fluid" src="assets/images/outfit1.jpg" alt="outfit">
                             </div>
                             <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Що вдягнути?<img alt="man" src="assets/images/man.png" width="50" height="50"></h4>
+                                </div>
                                 <img class="img-fluid" src="assets/images/outfit2.jpg" alt="outfit">
                             </div>
                         </div>
@@ -95,7 +103,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 
 <!--Bootsrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <!--Own JavaScript -->
 <script type="text/javascript"  src="assets/js/main.js"> </script>
 </body>
