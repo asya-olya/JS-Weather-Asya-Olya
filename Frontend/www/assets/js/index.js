@@ -11,14 +11,31 @@ let cloudiness = document.getElementById("cloudiness");
 let wind = document.getElementById("wind");
 let sunrise = document.getElementById("sunrise");
 let sunset = document.getElementById("sunset");
+let loc = document.getElementById("my-loc");
 
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
+loc.addEventListener("click", findMyDetails);
 
 function enterPressed(event) {
     if (event.key === "Enter") {
         findWeatherDetails();
     }
+}
+
+var lat;
+var lon;
+if (navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function(position){
+        lat=position.coords.latitude;
+        lon=position.coords.longitude;
+        $("#city-name").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
+    });
+}
+
+function findMyDetails(){
+    let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+appKey;
+    httpRequestAsync(searchLink, theResponse);
 }
 
 function findWeatherDetails() {
@@ -29,6 +46,7 @@ function findWeatherDetails() {
         httpRequestAsync(searchLink, theResponse);
     }
 }
+
 function theResponse(response) {
     let jsonObject = JSON.parse(response);
     cityName.innerHTML = jsonObject.name;
