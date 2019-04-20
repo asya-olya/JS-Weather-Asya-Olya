@@ -26,27 +26,50 @@ body{
     flex-direction: column !important;
   }
 }
-.carousel{
-  margin-top:-30px;
+.closet{
+  height:667px;
 }
-.carousel-inner{
-  height:700px;
-  .carousel-item{
-    img{
-      border-radius:10px;
+.choose{
+  padding:10px;
+  .button-shirt, .button-pants, .button-skirt, .button-outerwear, .button-shoes, .button-accessories{
+    button {
+      text-decoration: none;
+      outline: none;
+      display: inline-block;
+      width: 100px;
+      height: 45px;
+      line-height: 35px;
+      border-radius: 45px;
+      margin-top: 30px;
+      margin-left:25px;
+      //font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 3px;
+      font-weight: 600;
+      color: #524f4e;
+      background: white;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+      transition: .3s;
+    }
+    button:hover{
+      background: #2ec3e5;
+      box-shadow: 0 15px 20px rgba(46,195,229,.4);
+      color: white;
+      transform: translateY(-7px);
     }
   }
-}
-.carousel-caption{
-     position:relative;
-     top:20px;
-     left:-50px;
-     h4{
-       color:rgba(0,0,0,.5);
-     }
-}
-.carousel-control-prev{
-  padding-left:10px;
+  .button-outerwear{
+    button{
+      line-height:18px;
+    }
+  }
+  .button-shirt{
+    #block-with-shirt{
+      right:50px;
+    }
+  }
 }
 .left{
   background-color:#fff1dd;
@@ -58,24 +81,45 @@ body{
   color:rgba(0,0,0,.5);
   border-radius:10px;
   padding:20px;
-  .city{
-    font-weight:600;
-    font-size:40px;
-    img{
-      margin-left:10px;
-      margin-top:-9px;
-      opacity:0.5;
+  .city-icon{
+    #city-name {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 40px;
     }
+      #icon {
+        vertical-align:bottom;
+        width: 20%;
+      }
+
   }
-  .temperature{
+  #temperature{
     font-weight:600;
     font-size:30px;
     margin-top:-10px;
   }
-  .pressure, .humidity, .cloudiness, .wind, .sunrise, .sunset{
+  #pressure, #humidity, #cloudiness, .wind, .sunrise, .sunset{
     font-size:20px;
     span{
       font-weight:600;
     }
   }
+}
+#search-btn {
+  margin-left:180px;
+  margin-top:-34px;
+  width: 40px;
+  height:40px;
+  color: red;
+}
+
+#search-txt {
+  color: red;
+  height:30px;
+  border-radius: 10px;
+  border-style:none;
+  outline:none;
+  padding-right:1px;
+  padding-left:1px;
+  text-align:center;
 }

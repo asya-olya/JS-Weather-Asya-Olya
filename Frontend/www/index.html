@@ -30,20 +30,23 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <!-- Пункты вертикального меню -->
                     <ul class="navbar-nav">
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#link-1">Київ</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#link-2">Нью-Йорк</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#link-3">Токіо</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#link-4">Ліссабон</a>-->
+                        <!--</li>-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#link-1">Київ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#link-2">Нью-Йорк</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#link-3">Токіо</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#link-4">Ліссабон</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#link-5">Додати місто...</a>
+                            <div class="search">
+                            <input type="text" placeholder="Enter City Name" id="search-txt">
+                            <a class="nav-link" id="search-btn" href="#link-5"><i class="fas fa-search"></i></a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -54,53 +57,89 @@
             <div class="row">
                 <div class="col-md-4 left">
                     <div class="weather">
-                    <div class="city">Київ<img src="assets/images/home-nopick.png" width="30" height="30"></div>
-                    <div class="temperature">28&deg;C</div>
-                        <div class="pressure"><span>Тиск:</span> 755 мм рт. ст.</div>
-                        <div class="humidity"><span>Вологість:</span> 48%</div>
-                        <div class="cloudiness"><span>Хмарність:</span> чисте небо</div>
+                        <div class="city-icon">
+                                <div id="city-name"></div>
+                            <img src="" alt="" id="icon">
+                        </div>
+                      <div id="temperature"></div>
+                        <div id="pressure"></div>
+                        <div id="humidity"></div>
+                        <div id="cloudiness"></div>
                         <div class="wind"><span>Вітер:</span> 3 м/с - північно-східний</div>
                         <div class="sunrise"><span>Схід:</span> 6:30</div>
                         <div class="sunset"><span>Захід:</span> 19:30</div>
                     </div>
                   </div>
                 <div class="col-md-8 right">
-                    <div id="demo" class="carousel slide container" data-ride="carousel">
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                        </ul>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4>Що вдягнути?<img alt="woman" src="assets/images/woman.png" width="50" height="50"></h4>
-                                </div>
-                                <img class="img-fluid" src="assets/images/outfit1.jpg" alt="outfit">
+                    <div class="row closet">
+                        <div class="col-md-9">
+                        </div>
+                        <div class="col-md-1 choose">
+                            <div class="button-shirt">
+                                <button onclick="toggle(block_with_shirt)" class="btn btn-default shirt">Футболка</button>
+                                <div id="block_with_shirt" style="display: none;">Вибери футболку, яку хочеш вдягнути сьогодні...</div>
+                                <script>
+                                    function toggle(el) {
+                                        el.style.display = (el.style.display == 'none') ? '' : 'none'
+                                    }
+                                </script>
                             </div>
-                            <div class="carousel-item">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h4>Що вдягнути?<img alt="man" src="assets/images/man.png" width="50" height="50"></h4>
-                                </div>
-                                <img class="img-fluid" src="assets/images/outfit2.jpg" alt="outfit">
+                            <div class="button-pants">
+                                    <button onclick="toggle(block_with_pants)" class="btn btn-default pants">Штани</button>
+                                    <div id="block_with_pants" style="display: none;">Вибери штани, які хочеш вдягнути сьогодні...</div>
+                                    <script>
+                                        function toggle(el) {
+                                            el.style.display = (el.style.display == 'none') ? '' : 'none'
+                                        }
+                                    </script>
+                            </div>
+                            <div class="button-skirt">
+                                <button onclick="toggle(block_with_skirt)" class="btn btn-default skirt">Спідниця</button>
+                                <div id="block_with_skirt" style="display: none;">Вибери спідницю, яку хочеш вдягнути сьогодні...</div>
+                                <script>
+                                    function toggle(el) {
+                                        el.style.display = (el.style.display == 'none') ? '' : 'none'
+                                    }
+                                </script>
+                            </div>
+                            <div class="button-outerwear">
+                                <button onclick="toggle(block_with_outerwear)" class="btn btn-default outerwear">Верхній<br> одяг</button>
+                                <div id="block_with_outerwear" style="display: none;">Вибери верхній одяг, який хочеш вдягнути сьогодні...</div>
+                                <script>
+                                    function toggle(el) {
+                                        el.style.display = (el.style.display == 'none') ? '' : 'none'
+                                    }
+                                </script>
+                            </div>
+                            <div class="button-shoes">
+                                <button onclick="toggle(block_with_shoes)" class="btn btn-default shoes">Взуття</button>
+                                <div id="block_with_shoes" style="display: none;">Вибери взуття, яке хочеш вдягнути сьогодні...</div>
+                                <script>
+                                    function toggle(el) {
+                                        el.style.display = (el.style.display == 'none') ? '' : 'none'
+                                    }
+                                </script>
+                            </div>
+                            <div class="button-accessories">
+                                <button onclick="toggle(block_with_accessories)" class="btn btn-default accessories">Аксесуари</button>
+                                <div id="block_with_accessories" style="display: none;">Вибери аксесуари, які хочеш вдягнути сьогодні...</div>
+                                <script>
+                                    function toggle(el) {
+                                        el.style.display = (el.style.display == 'none') ? '' : 'none'
+                                    }
+                                </script>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+<script  src="assets/js/index.js"></script>
 
 <!--Bootsrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
