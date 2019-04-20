@@ -8,6 +8,9 @@ let temperature = document.getElementById("temperature");
 let humidity = document.getElementById("humidity");
 let pressure = document.getElementById("pressure");
 let cloudiness = document.getElementById("cloudiness");
+let wind = document.getElementById("wind");
+let sunrise = document.getElementById("sunrise");
+let sunset = document.getElementById("sunset");
 
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
@@ -33,8 +36,20 @@ function theResponse(response) {
     temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°";
     pressure.innerHTML = "<span>Тиск: </span>"+parseInt(jsonObject.main.pressure*0.75006375541921) + " мм рт. ст.";
     humidity.innerHTML = "<span>Вологість: </span>"+jsonObject.main.humidity + "%";
+    wind.innerHTML = "<span>Вітер: </span>"+ jsonObject.wind.speed + " м/с";
+    var date = new Date(jsonObject.sys.sunrise*1000);
+    var hours = date.getHours();
+    var minutes = "0" + date.getMinutes();
+    var seconds = "0" + date.getSeconds();
+    var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+    sunrise.innerHTML = "<span>Схід сонця: </span>"+ formattedTime;
+    date = new Date(jsonObject.sys.sunset*1000);
+    hours = date.getHours();
+    minutes = "0" + date.getMinutes();
+    seconds = "0" + date.getSeconds();
+    formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+    sunset.innerHTML = "<span>Захід сонця: </span>"+ formattedTime;
     cloudiness.innerHTML = "<span>Хмарність: </span>"+jsonObject.clouds.all + "%";
-
 }
 
 function httpRequestAsync(url, callback)
