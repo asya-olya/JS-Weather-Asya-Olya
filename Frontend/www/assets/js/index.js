@@ -33,23 +33,23 @@ function theResponse(response) {
     let jsonObject = JSON.parse(response);
     cityName.innerHTML = jsonObject.name;
     icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
-    temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°";
-    pressure.innerHTML = "<span>Тиск: </span>"+parseInt(jsonObject.main.pressure*0.75006375541921) + " мм рт. ст.";
-    humidity.innerHTML = "<span>Вологість: </span>"+jsonObject.main.humidity + "%";
-    wind.innerHTML = "<span>Вітер: </span>"+ jsonObject.wind.speed + " м/с";
+    temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°C";
+    pressure.innerHTML = "<span>Pressure: </span>"+parseInt(jsonObject.main.pressure*0.75006375541921) + " mmhg";
+    humidity.innerHTML = "<span>Humidity: </span>"+jsonObject.main.humidity + "%";
+    wind.innerHTML = "<span>Wind: </span>"+ jsonObject.wind.speed + " meter/sec";
     var date = new Date(jsonObject.sys.sunrise*1000);
     var hours = date.getHours();
     var minutes = "0" + date.getMinutes();
     var seconds = "0" + date.getSeconds();
     var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-    sunrise.innerHTML = "<span>Схід сонця: </span>"+ formattedTime;
+    sunrise.innerHTML = "<span>Sunrise: </span>"+ formattedTime;
     date = new Date(jsonObject.sys.sunset*1000);
     hours = date.getHours();
     minutes = "0" + date.getMinutes();
     seconds = "0" + date.getSeconds();
     formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-    sunset.innerHTML = "<span>Захід сонця: </span>"+ formattedTime;
-    cloudiness.innerHTML = "<span>Хмарність: </span>"+jsonObject.clouds.all + "%";
+    sunset.innerHTML = "<span>Sunset: </span>"+ formattedTime;
+    cloudiness.innerHTML = "<span>Cloudiness: </span>"+jsonObject.clouds.all + "%";
 }
 
 function httpRequestAsync(url, callback)
