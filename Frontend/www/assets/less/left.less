@@ -1,0 +1,40 @@
+#weather {
+  height: 300px;
+  color: darken(@mainColor, 10%);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  top:20px;
+  background-color: rgba(255, 255, 255, 0.77);
+
+  .city-icon {
+    #city-name {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 42px;
+    }
+
+    #icon {
+      vertical-align: bottom;
+      width: 25%;
+    }
+
+  }
+
+  #temperature {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  #pressure, #humidity, #cloudiness, #wind, #sunrise, #sunset {
+    font-size: 17px;
+    opacity: 0.8;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

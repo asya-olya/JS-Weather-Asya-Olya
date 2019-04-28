@@ -1,0 +1,60 @@
+.navbar-container {
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 0px;
+  background-color: lighten(@mainColor, 25%);
+  box-shadow: 7px -1px 26px -3px rgba(76, 111, 161, 0.56);
+  z-index:3;
+
+
+  .navbar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px;
+
+
+    .navbar-brand {
+      color: darken(@mainColor, 24%);
+      font-size: 25px;
+      padding: 20px;
+      margin: 0px;
+      width: 100%;
+      background-color: rgb(242, 255, 252);
+      box-shadow: 0 5px 10px rgba(99, 159, 226, .4);
+      span{
+        margin-left: 5px;
+      }
+    }
+
+    #city {
+      color: darken(@mainColor, 30%);
+      font-weight: bolder;
+    }
+  }
+
+  .navbar-collapse {
+    align-items: flex-start;
+
+    .navbar-nav {
+      flex-direction: column !important;
+
+      .myloc {
+        color: @lessMainColor;
+        padding: 15px;
+        position: fixed;
+        bottom: 1px;
+        left: 90px;
+      }
+    }
+  }
+
+  .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

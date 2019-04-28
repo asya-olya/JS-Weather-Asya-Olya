@@ -1,8 +1,10 @@
+
 const appKey = "87be80b3a9c0deea79109c12867a53db";
 
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
+let city = document.getElementById("city");
 let icon = document.getElementById("icon");
 let temperature = document.getElementById("temperature");
 let humidity = document.getElementById("humidity");
@@ -17,24 +19,42 @@ searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 loc.addEventListener("click", findMyDetails);
 
+var lat;
+var lon;
+
+function initialize() {
+    var input = document.getElementById('search-txt');
+    var options = {
+        types: ['(cities)'],
+    };
+
+    var autocomplete = new google.maps.places.Autocomplete(input, options);
+    autocomplete.addListener('place_changed', function(){
+        var place = autocomplete.getPlace();
+        lat = place.geometry.location.lat();
+        lon = place.geometry.location.lng();
+    });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
 function enterPressed(event) {
     if (event.key === "Enter") {
         findWeatherDetails();
     }
 }
+var lat1;
+var lon1;
 
-var lat;
-var lon;
 if (navigator.geolocation){
     navigator.geolocation.getCurrentPosition(function(position){
-        lat=position.coords.latitude;
-        lon=position.coords.longitude;
+        lat1=position.coords.latitude;
+        lon1=position.coords.longitude;
         $("#city-name").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
     });
 }
 
 function findMyDetails(){
-    let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+appKey;
+    let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat1+"&lon="+lon1+"&appid="+appKey;
     httpRequestAsync(searchLink, theResponse);
 }
 
@@ -42,7 +62,7 @@ function findWeatherDetails() {
     if (searchInput.value === "") {
 
     }else {
-        let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
+        let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+appKey;
         httpRequestAsync(searchLink, theResponse);
     }
 }
@@ -50,6 +70,8 @@ function findWeatherDetails() {
 function theResponse(response) {
     let jsonObject = JSON.parse(response);
     cityName.innerHTML = jsonObject.name;
+    city.innerHTML = jsonObject.name;
+
     icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
     temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°C";
     pressure.innerHTML = "<span>Pressure: </span>"+parseInt(jsonObject.main.pressure*0.75006375541921) + " mmhg";
