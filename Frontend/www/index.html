@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Pizza</title>
+    <title>Weather</title>
 
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -12,17 +12,16 @@
     <!-- LESS JavaScript компілятор -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
-
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-4 col-lg-3 navbar-container bg-light">
+        <div class="col-md-4 col-lg-3 navbar-container">
             <!-- Вертикальное меню -->
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="#">
+                    <span>Weather in </span><b id="city"></b>
                     <img alt="Brand" width="30" height="30" src="assets/images/cloud_weathe_sun_icon-icons.com_51096.png">
-                    <span>Погода у містах</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,19 +43,19 @@
                         <!--</li>-->
                         <li class="nav-item">
                             <div class="search">
-                            <input type="text" placeholder="Add a city" id="search-txt">
-                            <a class="nav-link" id="search-btn" href="#link-5"><i class="fas fa-search"></i></a>
+                                <input type="text" placeholder="Add a city" id="search-txt">
+                                <a class="nav-link" id="search-btn" href="#link-5"><i class="fas fa-search"></i></a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item myloc">
                             <a class="nav-link" id="my-loc" href="#">My location</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="col-md-8 col-lg-9 content-container" style="background-color: #ffe0b2;">
-            <div class="row">
+        <div class="col-md-8 col-lg-9 content-container">
+             <div class="row">
                 <div class="col-md-4 left">
                     <div id="weather">
                         <div class="city-icon">
@@ -138,6 +137,7 @@
         </div>
     </div>
 </div>
+
 <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>

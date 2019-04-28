@@ -3,6 +3,7 @@ const appKey = "87be80b3a9c0deea79109c12867a53db";
 let searchButton = document.getElementById("search-btn");
 let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
+let city = document.getElementById("city");
 let icon = document.getElementById("icon");
 let temperature = document.getElementById("temperature");
 let humidity = document.getElementById("humidity");
@@ -16,6 +17,7 @@ let loc = document.getElementById("my-loc");
 searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 loc.addEventListener("click", findMyDetails);
+
 
 function enterPressed(event) {
     if (event.key === "Enter") {
@@ -50,6 +52,8 @@ function findWeatherDetails() {
 function theResponse(response) {
     let jsonObject = JSON.parse(response);
     cityName.innerHTML = jsonObject.name;
+    city.innerHTML = jsonObject.name;
+
     icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
     temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°C";
     pressure.innerHTML = "<span>Pressure: </span>"+parseInt(jsonObject.main.pressure*0.75006375541921) + " mmhg";
