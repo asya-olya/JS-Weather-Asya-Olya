@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20a0655e-0007-4837-b3a7-c4a10c112703" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/less/left.less" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/less/left.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/www/assets/less/right.less" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/less/right.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,17 +17,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="833">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frontend/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -42,16 +44,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/right.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
               <folding>
                 <element signature="e#163#1274#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/left.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -71,9 +87,7 @@
       <list>
         <option value="$PROJECT_DIR$/Frontend/src/index.js" />
         <option value="$PROJECT_DIR$/Frontend/www/assets/less/weather.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less" />
         <option value="$PROJECT_DIR$/Frontend/www/assets/less/main.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/left.less" />
         <option value="$PROJECT_DIR$/Frontend/www/assets/less/search.less" />
         <option value="$PROJECT_DIR$/Frontend/www/assets/js/Templates.js" />
         <option value="$PROJECT_DIR$/Frontend/templates/City_OneItem.ejs" />
@@ -83,7 +97,9 @@
         <option value="$PROJECT_DIR$/Frontend/src/main.js" />
         <option value="$PROJECT_DIR$/Frontend/www/assets/js/index.js" />
         <option value="$PROJECT_DIR$/Frontend/www/index.html" />
+        <option value="$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less" />
         <option value="$PROJECT_DIR$/Frontend/www/assets/less/right.less" />
+        <option value="$PROJECT_DIR$/Frontend/www/assets/less/left.less" />
       </list>
     </option>
   </component>
@@ -193,12 +209,14 @@
       <workItem from="1555782573277" duration="5336000" />
       <workItem from="1555934801020" duration="10908000" />
       <workItem from="1556357402846" duration="14518000" />
-      <workItem from="1556441413191" duration="236000" />
+      <workItem from="1556441413191" duration="1782000" />
+      <workItem from="1556448211916" duration="36000" />
+      <workItem from="1556448412072" duration="239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63459000" />
+    <option name="totallyTimeSpent" value="65276000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -285,9 +303,6 @@
     <entry file="file://$PROJECT_DIR$/Frontend/www/assets/images/фон.png" />
     <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/www/assets/less/main.less" />
     <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/www/assets/less/order.less" />
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/search.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -344,21 +359,11 @@
     <entry file="file://$PROJECT_DIR$/_gitignore.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/main.less">
       <provider selected="true" editor-type-id="text-editor">
@@ -367,7 +372,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/right.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+          <folding>
+            <element signature="e#163#1274#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/left.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/www/index.html">
@@ -381,16 +413,6 @@
             <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/right.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-          <folding>
-            <element signature="e#163#1274#0" />
           </folding>
         </state>
       </provider>
