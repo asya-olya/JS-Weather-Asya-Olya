@@ -1,7 +1,9 @@
-
+// var City_Navbar = require("./City_Navbar");
+// import { addToNavbar } from "./city/City_Navbar";
 const appKey = "87be80b3a9c0deea79109c12867a53db";
 
 let searchButton = document.getElementById("search-btn");
+let plusButton = document.getElementById("plus-btn");
 let searchInput = document.getElementById("search-txt");
 let cityName = document.getElementById("city-name");
 let city = document.getElementById("city");
@@ -21,6 +23,8 @@ loc.addEventListener("click", findMyDetails);
 
 var lat;
 var lon;
+var cityN="";
+var place="";
 
 function initialize() {
     var input = document.getElementById('search-txt');
@@ -30,12 +34,27 @@ function initialize() {
 
     var autocomplete = new google.maps.places.Autocomplete(input, options);
     autocomplete.addListener('place_changed', function(){
-        var place = autocomplete.getPlace();
+        place = autocomplete.getPlace();
+        cityN = place.name + ", "+place.address_components[2].long_name +", "+ place.address_components[3].long_name;
         lat = place.geometry.location.lat();
         lon = place.geometry.location.lng();
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+plusButton.addEventListener("click",addCity(cityN));
+
+function addCity(cityNa){
+    if (cityNa!=="") {
+        const CITY_TEMPLATE = $('#city-template');
+        var $clone = CITY_TEMPLATE.clone();
+        $clone.find('.nav-link').text(cityNa);
+        $clone.find('.remove').click(function(){
+            $(this).remove();
+        })
+        $('#cities').append($clone);
+        $clone.show();
+    }
+}
 
 function enterPressed(event) {
     if (event.key === "Enter") {
