@@ -19,6 +19,7 @@ searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 loc.addEventListener("click", findMyDetails);
 
+<<<<<<< HEAD
 var lat;
 var lon;
 
@@ -37,6 +38,10 @@ function initialize() {
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
+||||||| merged common ancestors
+=======
+
+>>>>>>> cc676324b008b8b060886e403fc944988457f5d6
 function enterPressed(event) {
     if (event.key === "Enter") {
         findWeatherDetails();
