@@ -1,3 +1,4 @@
+
 const appKey = "87be80b3a9c0deea79109c12867a53db";
 
 let searchButton = document.getElementById("search-btn");
@@ -18,25 +19,42 @@ searchButton.addEventListener("click", findWeatherDetails);
 searchInput.addEventListener("keyup", enterPressed);
 loc.addEventListener("click", findMyDetails);
 
+var lat;
+var lon;
+
+function initialize() {
+    var input = document.getElementById('search-txt');
+    var options = {
+        types: ['(cities)'],
+    };
+
+    var autocomplete = new google.maps.places.Autocomplete(input, options);
+    autocomplete.addListener('place_changed', function(){
+        var place = autocomplete.getPlace();
+        lat = place.geometry.location.lat();
+        lon = place.geometry.location.lng();
+    });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
 
 function enterPressed(event) {
     if (event.key === "Enter") {
         findWeatherDetails();
     }
 }
+var lat1;
+var lon1;
 
-var lat;
-var lon;
 if (navigator.geolocation){
     navigator.geolocation.getCurrentPosition(function(position){
-        lat=position.coords.latitude;
-        lon=position.coords.longitude;
+        lat1=position.coords.latitude;
+        lon1=position.coords.longitude;
         $("#city-name").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
     });
 }
 
 function findMyDetails(){
-    let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+appKey;
+    let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat1+"&lon="+lon1+"&appid="+appKey;
     httpRequestAsync(searchLink, theResponse);
 }
 
@@ -44,7 +62,7 @@ function findWeatherDetails() {
     if (searchInput.value === "") {
 
     }else {
-        let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&appid="+appKey;
+        let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+appKey;
         httpRequestAsync(searchLink, theResponse);
     }
 }

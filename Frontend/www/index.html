@@ -11,6 +11,7 @@
     <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
     <!-- LESS JavaScript компілятор -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu8EfHXfhweZE-W19Uo2d_UIFrmKvOeMo&sensor=false&libraries=places"></script>
 
 </head>
 <body>
@@ -43,7 +44,7 @@
                         <!--</li>-->
                         <li class="nav-item">
                             <div class="search">
-                                <input type="text" placeholder="Add a city" id="search-txt">
+                                <input type="text" placeholder="Add a city" id="search-txt" autocomplete="on">
                                 <a class="nav-link" id="search-btn" href="#link-5"><i class="fas fa-search"></i></a>
                             </div>
                         </li>
@@ -145,7 +146,6 @@
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 <script  src="assets/js/index.js"></script>
-
 <!--Bootsrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <!--Own JavaScript -->
