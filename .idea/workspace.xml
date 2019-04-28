@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20a0655e-0007-4837-b3a7-c4a10c112703" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/Frontend/src/Storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/Templates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/city/City_Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/templates/City_OneItem.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/www/assets/less/left.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/www/assets/less/right.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/www/assets/less/search.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/less/main.less" afterDir="false" />
-||||||| merged common ancestors
-      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/less/main.less" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/less/right.less" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/less/right.less" afterDir="false" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
+    <list default="true" id="215244bc-4a82-4b7a-9997-9b4d7af29f66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Frontend/www/assets/less/left.less" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/assets/less/left.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tstus" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -36,86 +19,29 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="833">
-              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-||||||| merged common ancestors
-            <state relative-caret-position="238">
-              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-=======
-            <state relative-caret-position="-216">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frontend/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="153">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-||||||| merged common ancestors
-            <state relative-caret-position="304">
-              <caret line="51" column="67" lean-forward="true" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-=======
-            <state relative-caret-position="204">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-              <folding>
-<<<<<<< HEAD
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-||||||| merged common ancestors
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-=======
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-||||||| merged common ancestors
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/left.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/main.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-=======
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/right.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-              <folding>
-                <element signature="e#163#1274#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,59 +49,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Frontend/src/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/weather.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/main.less" />
-<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Frontend/www/index.html" />
         <option value="$PROJECT_DIR$/Frontend/www/assets/less/left.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/search.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/right.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/js/Templates.js" />
-        <option value="$PROJECT_DIR$/Frontend/templates/City_OneItem.ejs" />
-        <option value="$PROJECT_DIR$/../JS-Pizza/Frontend/src/Pizza_List.js" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/js/City_Navbar.js" />
-        <option value="$PROJECT_DIR$/Frontend/src/city/City_Navbar.js" />
-        <option value="$PROJECT_DIR$/Frontend/src/main.js" />
-        <option value="$PROJECT_DIR$/Frontend/www/index.html" />
-||||||| merged common ancestors
-        <option value="$PROJECT_DIR$/Frontend/www/index.html" />
-=======
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/left.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/search.less" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/js/Templates.js" />
-        <option value="$PROJECT_DIR$/Frontend/templates/City_OneItem.ejs" />
-        <option value="$PROJECT_DIR$/../JS-Pizza/Frontend/src/Pizza_List.js" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/js/City_Navbar.js" />
-        <option value="$PROJECT_DIR$/Frontend/src/city/City_Navbar.js" />
-        <option value="$PROJECT_DIR$/Frontend/src/main.js" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-        <option value="$PROJECT_DIR$/Frontend/www/assets/js/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/www/index.html" />
-        <option value="$PROJECT_DIR$/Frontend/www/assets/less/right.less" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="676" />
-    <option name="y" value="111" />
-||||||| merged common ancestors
-    <option name="x" value="677" />
-    <option name="y" value="112" />
-=======
     <option name="x" value="675" />
     <option name="y" value="111" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
     <option name="width" value="699" />
     <option name="height" value="549" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,12 +82,6 @@
               <item name="JS-Weather-Asya-Olya" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS-Weather-Asya-Olya" type="462c0819:PsiDirectoryNode" />
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS-Weather-Asya-Olya" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS-Weather-Asya-Olya" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -206,14 +90,6 @@
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS-Weather-Asya-Olya" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS-Weather-Asya-Olya" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JS-Weather-Asya-Olya" type="b2602c69:ProjectViewProjectNode" />
@@ -227,22 +103,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jsx.switch.disabled" value="true" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\INSTALL\Программирование\js\JS-Weather-Asya-Olya\Frontend\src" />
-      <recent name="D:\INSTALL\Программирование\js\JS-Weather-Asya-Olya\Frontend\src\city" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -261,85 +125,37 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20a0655e-0007-4837-b3a7-c4a10c112703" name="Default Changelist" comment="" />
-      <created>1554206941227</created>
+      <changelist id="215244bc-4a82-4b7a-9997-9b4d7af29f66" name="Default Changelist" comment="" />
+      <created>1556449471099</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554206941227</updated>
-      <workItem from="1554206951320" duration="4546000" />
-      <workItem from="1554230800253" duration="7738000" />
-      <workItem from="1554287091277" duration="31000" />
-      <workItem from="1554287871753" duration="6462000" />
-      <workItem from="1554442942588" duration="2004000" />
-      <workItem from="1555739388362" duration="633000" />
-      <workItem from="1555742142571" duration="11043000" />
-<<<<<<< HEAD
-      <workItem from="1555782573277" duration="5336000" />
-      <workItem from="1555934801020" duration="10908000" />
-      <workItem from="1556357402846" duration="14518000" />
-      <workItem from="1556432762054" duration="614000" />
-||||||| merged common ancestors
-      <workItem from="1555782573277" duration="5169000" />
-=======
-      <workItem from="1555782573277" duration="5336000" />
-      <workItem from="1555934801020" duration="10908000" />
-      <workItem from="1556357402846" duration="14518000" />
-      <workItem from="1556441413191" duration="236000" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
+      <updated>1556449471099</updated>
+      <workItem from="1556449477110" duration="2446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="63833000" />
-||||||| merged common ancestors
-    <option name="totallyTimeSpent" value="37626000" />
-=======
-    <option name="totallyTimeSpent" value="63459000" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-  </component>
-  <component name="TodoView" selected-index="1">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="2446000" />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-||||||| merged common ancestors
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
-=======
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
     <layout>
-<<<<<<< HEAD
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13095239" />
-||||||| merged common ancestors
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13036565" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
+      <window_info id="Grunt " side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16693164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="npm" order="3" side_tool="true" />
-      <window_info id="Grunt " order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32850242" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3494364" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -348,312 +164,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/index.js" />
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/images/фон.png" />
-    <entry file="file://$USER_HOME$/Desktop/Pr/2 курс/2 sem/JS-Pizza/Frontend/www/assets/less/main.less" />
-    <entry file="file://$USER_HOME$/Desktop/Pr/2 курс/2 sem/JS-Pizza/Frontend/www/assets/less/order.less" />
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/left.less" />
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-||||||| merged common ancestors
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-=======
-    <entry file="file://$PROJECT_DIR$/server.js">
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less">
-||||||| merged common ancestors
-    <entry file="file://$PROJECT_DIR$/server.js">
-=======
-    <entry file="file://$PROJECT_DIR$/Frontend/src/index.js" />
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/images/фон.png" />
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/www/assets/less/main.less" />
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/www/assets/less/order.less" />
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/navcontainer.less">
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/search.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/right.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/Templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="3" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/Templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/Pizza_List.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-||||||| merged common ancestors
-=======
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/search.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/Templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="3" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/Templates.js" />
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/Pizza_List.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/API.js">
-||||||| merged common ancestors
-    <entry file="file://$PROJECT_DIR$/Frontend/src/index.js" />
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/main.less">
-=======
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/API.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/pizza/PizzaCart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/city/City_Navbar.js" />
-    <entry file="file://$PROJECT_DIR$/Frontend/templates/City_OneItem.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/main.js" />
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_gitignore.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/main.less">
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-209" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/pizza/PizzaCart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/city/City_Navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/templates/City_OneItem.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JS-Pizza/Frontend/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_gitignore.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-||||||| merged common ancestors
-        <state relative-caret-position="294">
-          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
-=======
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/left.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+        <state relative-caret-position="371">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/main.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/left.less">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-||||||| merged common ancestors
-        <state relative-caret-position="304">
-          <caret line="51" column="67" lean-forward="true" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-=======
-        <state relative-caret-position="204">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-          <folding>
-<<<<<<< HEAD
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-||||||| merged common ancestors
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-=======
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-||||||| merged common ancestors
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-=======
-    <entry file="file://$PROJECT_DIR$/Frontend/www/assets/less/right.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-          <folding>
-            <element signature="e#163#1274#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
->>>>>>> cc676324b008b8b060886e403fc944988457f5d6
   </component>
 </project>
