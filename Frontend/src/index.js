@@ -15,15 +15,16 @@ let wind = document.getElementById("wind");
 let sunrise = document.getElementById("sunrise");
 let sunset = document.getElementById("sunset");
 let loc = document.getElementById("my-loc");
+let numberOfCity=0;
 
 searchButton.addEventListener("click", findWeatherDetails);
-// searchInput.addEventListener("keyup", enterPressed);
+searchInput.addEventListener("keydown", enterPressed);
 loc.addEventListener("click", findMyDetails);
-searchInput.addEventListener("keyup",enterPressed);
+plusButton.addEventListener("click",addCity);
 
 var lat;
 var lon;
-var cityN="";
+var cityN=[];
 var place="";
 
 function initialize() {
@@ -35,46 +36,58 @@ function initialize() {
     var autocomplete = new google.maps.places.Autocomplete(input, options);
     autocomplete.addListener('place_changed', function(){
         place = autocomplete.getPlace();
-        cityN = place.name + ", "+place.address_components[2].long_name +", "+ place.address_components[3].long_name;
+        cityN[0] = place.name + ", "+place.address_components[2].long_name +", "+ place.address_components[3].long_name;
         // cityN = place.name;
+        cityN[1]=place.geometry.location.lat();
+        cityN[2]=place.geometry.location.lng();
         lat = place.geometry.location.lat();
         lon = place.geometry.location.lng();
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
-function enterPressed(event){
-    if (event.key === "Enter") {
-        addCity();
-    }
-}
-
-var numberOfCity;
 function addCity(){
-    if (cityN === "") {
+    if (searchInput.value === ""){
        alert("Type city!");
-    }else {
-        if(numberOfCity===8){
+    }else{
+        if(numberOfCity===10){
             alert("Delete 1 city!");
             return;
         }
+        $("#city-template").each(function(i,elem){
+               if($(elem).find('.nav-link').text()===cityN[0]){
+                   alert("Look! City is already in menu!")
+                   return;
+               }
+        })
         const CITY_TEMPLATE = $('#city-template');
         var $clone = CITY_TEMPLATE.clone();
-        $clone.find('.nav-link').text(cityN);
+        $clone.find('.nav-link').text(cityN[0]);
+        $clone.find(".latitude").text(cityN[1]);
+        $clone.find(".longitude").text(cityN[2]);
         $clone.find('.remove').click(function(){
-            $(this).remove();
+            $clone.slideUp("400");
+            numberOfCity--;
+        })
+        $clone.find('.nav-link').click(function(){
+            // searchInput.value=$clone.find('.nav-link').text();
+            lat=$clone.find('.latitude').text();
+            lon=$clone.find('.longitude').text();
+             findWeatherDetails();
         })
         $clone.show();
+        $clone.find('.latitude').hide();
+        $clone.find('.longitude').hide();
         $('.navbar-nav').append($clone);
         numberOfCity++;
     }
 }
 
-// function enterPressed(event) {
-//     if (event.key === "Enter") {
-//         findWeatherDetails();
-//     }
-// }
+function enterPressed(event) {
+    if (event.key === "Enter") {
+        findWeatherDetails();
+    }
+}
 var lat1;
 var lon1;
 
@@ -93,7 +106,7 @@ function findMyDetails(){
 
 function findWeatherDetails() {
     if (searchInput.value === "") {
-
+        alert("Type city!");
     }else {
         let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid="+appKey;
         httpRequestAsync(searchLink, theResponse);
