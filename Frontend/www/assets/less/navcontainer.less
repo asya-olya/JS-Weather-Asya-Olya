@@ -31,6 +31,11 @@
         margin-left: 5px;
       }
     }
+    .navbar-brand-reg{
+      -webkit-transform: rotate(-90deg);
+      margin-top:300px;
+      font-size:30px;
+    }
 
     #city {
       color: darken(@mainColor, 30%);
@@ -51,18 +56,19 @@
         bottom: 1px;
         left: 90px;
       }
-      #cities{
-        margin-top:-30px;
-        .nav-item{
-          margin-bottom:-9px;
-          .remove{
+        #city-template {
+          margin-left:10px;
+          margin-top: -20px;
+          .nav-link{
             cursor:pointer;
-            color: rgba(0,0,0,.5);
-            position:relative;
-            top:-35px;
-            left:200px;
           }
-        }
+          .remove {
+            cursor: pointer;
+            color: rgba(0, 0, 0, .5);
+            position: relative;
+            top: -35px;
+            left: 300px;
+          }
       }
     }
   }
