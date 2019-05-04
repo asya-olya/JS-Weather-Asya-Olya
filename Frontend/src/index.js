@@ -1,5 +1,4 @@
 // var City_Navbar = require("./City_Navbar");
-// import { addToNavbar } from "./city/City_Navbar";
 const appKey = "87be80b3a9c0deea79109c12867a53db";
 
 let searchButton = document.getElementById("search-btn");
@@ -18,8 +17,9 @@ let sunset = document.getElementById("sunset");
 let loc = document.getElementById("my-loc");
 
 searchButton.addEventListener("click", findWeatherDetails);
-searchInput.addEventListener("keyup", enterPressed);
+// searchInput.addEventListener("keyup", enterPressed);
 loc.addEventListener("click", findMyDetails);
+searchInput.addEventListener("keyup",enterPressed);
 
 var lat;
 var lon;
@@ -36,31 +36,45 @@ function initialize() {
     autocomplete.addListener('place_changed', function(){
         place = autocomplete.getPlace();
         cityN = place.name + ", "+place.address_components[2].long_name +", "+ place.address_components[3].long_name;
+        // cityN = place.name;
         lat = place.geometry.location.lat();
         lon = place.geometry.location.lng();
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
-plusButton.addEventListener("click",addCity(cityN));
 
-function addCity(cityNa){
-    if (cityNa!=="") {
+function enterPressed(event){
+    if (event.key === "Enter") {
+        addCity();
+    }
+}
+
+var numberOfCity;
+function addCity(){
+    if (cityN === "") {
+       alert("Type city!");
+    }else {
+        if(numberOfCity===8){
+            alert("Delete 1 city!");
+            return;
+        }
         const CITY_TEMPLATE = $('#city-template');
         var $clone = CITY_TEMPLATE.clone();
-        $clone.find('.nav-link').text(cityNa);
+        $clone.find('.nav-link').text(cityN);
         $clone.find('.remove').click(function(){
             $(this).remove();
         })
-        $('#cities').append($clone);
         $clone.show();
+        $('.navbar-nav').append($clone);
+        numberOfCity++;
     }
 }
 
-function enterPressed(event) {
-    if (event.key === "Enter") {
-        findWeatherDetails();
-    }
-}
+// function enterPressed(event) {
+//     if (event.key === "Enter") {
+//         findWeatherDetails();
+//     }
+// }
 var lat1;
 var lon1;
 
