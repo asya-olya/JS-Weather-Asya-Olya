@@ -44,3 +44,44 @@
   top: -25px;
   left: 70px;
 }
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+h2{
+  color: darken(@mainColor, 24%);
+}
+.user, .envelope, .key{
+  padding: 10px;
+  background-color: darken(@mainColor, 10%);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid darken(@mainColor, 10%);
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: darken(@mainColor, 10%);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

@@ -1,2 +1,2 @@
-var main = require('./Frontend/src/main');
+var main = require('./Backend/main');
 main.startServer(5050);
