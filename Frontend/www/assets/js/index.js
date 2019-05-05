@@ -1,5 +1,6 @@
 // var City_Navbar = require("./City_Navbar");
 const appKey = "87be80b3a9c0deea79109c12867a53db";
+var db = require('./data/datab');
 
 let searchButton = document.getElementById("search-btn");
 let plusButton = document.getElementById("plus-btn");
@@ -149,3 +150,5 @@ function httpRequestAsync(url, callback)
     httpRequest.open("GET", url, true); // true for asynchronous
     httpRequest.send();
 }
+
+
