@@ -1,21 +1,5 @@
-.aright{
-  height: 100%;
 
-  #content{
-    background-color: rgb(255, 208, 170);
-    border: 5px solid rgba(250, 230, 179, 0.7);
-    border-radius: 20px;
-    position: center;
-    margin-left: 15%;
-    padding-top: 15%;
-    height: 100%;
-    width: 70%;
-  }
-}
-.navbar-brand-reg{
-
-}
-
+.content-container{
 #right{
   height: 80%;
   width: 40%;
@@ -31,12 +15,12 @@
   left: 10px;
 }
 #right1{
-   height: 600px;
-   width: 600px;
-   position: fixed;
-   top: -245px;
-   right: -155px;
- }
+  height: 600px;
+  width: 600px;
+  position: fixed;
+  top: -245px;
+  right: -155px;
+}
 #left1{
   height: 300px;
   width: 300px;
@@ -44,44 +28,62 @@
   top: -25px;
   left: 70px;
 }
-.input-container {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  width: 100%;
-  margin-bottom: 15px;
-}
-h2{
-  color: darken(@mainColor, 24%);
-}
-.user, .envelope, .key{
-  padding: 10px;
-  background-color: darken(@mainColor, 10%);
-  color: white;
-  min-width: 50px;
-  text-align: center;
-}
+.aright{
+  height: 100%;
 
-.input-field {
-  width: 100%;
-  padding: 10px;
-  outline: none;
-}
+  #content{
+    background-color: rgb(255, 208, 170);
+    border: 5px solid rgba(250, 230, 179, 0.7);
+    border-radius: 20px;
+    position: center;
+    margin-left: 15%;
+    padding-top: 13%;
+    height: 100%;
+    width: 70%;
 
-.input-field:focus {
-  border: 2px solid darken(@mainColor, 10%);
-}
+    .input-container {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    h2{
+      color: darken(@mainColor, 17%);
+      margin-bottom: 20px;
+    }
+    .user, .envelope, .key{
+      padding: 10px;
+      background-color: darken(@mainColor, 10%);
+      color: white;
+      min-width: 50px;
+      text-align: center;
+    }
 
-/* Set a style for the submit button */
-.btn {
-  background-color: darken(@mainColor, 10%);
-  color: white;
-  padding: 15px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      outline: none;
+    }
 
-.btn:hover {
-  opacity: 1;
+    .input-field:focus {
+      border: 2px solid @mainColor;
+    }
+
+    /* Set a style for the submit button */
+    .btn {
+      background-color: darken(@mainColor, 5%);
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.98;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+  }
+}
 }

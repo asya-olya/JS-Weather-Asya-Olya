@@ -23,7 +23,7 @@ var Clothes =	new	mongoose.Schema({
 //При створенні моделі задається назва колекції (таблиці)
 var Garment =	mongoose.model('weather',Clothes);
 
-exports.checkType = function(callback, type, mintemperature, maxtemperature, cloudiness, wind) {
+exports.checkType = function(callback, type, temperature, cloudiness, wind) {
     Garment.find(
         {
             $and: [
@@ -34,12 +34,12 @@ exports.checkType = function(callback, type, mintemperature, maxtemperature, clo
                 },
                 {
                     minTemperature: {
-                        $gte: mintemperature
+                        $gte: temperature
                     }
                 },
                 {
                     maxTemperature: {
-                        $lte: maxtemperature
+                        $lte: temperature
                     }
                 },
                 {
@@ -55,7 +55,9 @@ exports.checkType = function(callback, type, mintemperature, maxtemperature, clo
             ]
         },
     function(error,data){
-        callback(error,data);
+        if(!error) {
+            console.log(data.src);
+        }
     }
     );
 }
@@ -63,6 +65,7 @@ exports.checkType = function(callback, type, mintemperature, maxtemperature, clo
 exports.getAll = function(callback){
     Garment.find({}, function(error,data){
         callback(error,data);
+        console.log(data.src);
     })
 }
 

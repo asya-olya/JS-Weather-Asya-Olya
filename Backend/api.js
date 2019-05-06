@@ -6,12 +6,11 @@ exports.getAllClothes = function(req, res){
     })
 }
 
-exports.getAllOfType = function(req, res){
+exports.checkType = function(req, res){
     db.checkType(function (error, data) {
-        res.send(data);
-    })
+        res.send(data.src);
+    }, 'shirt', 20, 70, 4)
 }
-
 
 exports.createOrder = function(req, res) {
     var order_info = req.body;
